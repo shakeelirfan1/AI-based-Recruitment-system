@@ -1,6 +1,8 @@
-venv/
-__pycache__/
 .env
+venv/
 credentials.json
+credential_web.json
+token.json
 calendar_token.pkl
+__pycache__/
 *.pyc
