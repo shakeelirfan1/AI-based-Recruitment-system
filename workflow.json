@@ -1,0 +1,16 @@
+{
+  "project": "AI Recruitment System",
+  "workflow": [
+    "Upload Resume",
+    "Extract Resume Information",
+    "Match with Job Description",
+    "Generate AI Summary",
+    "Calculate Match Score",
+    "Save Candidate to Airtable",
+    "Recruiter Review",
+    "Generate Interview Questions",
+    "Schedule Interview",
+    "Generate PDF Report"
+  ],
+  "implementation": "Python + Streamlit"
+}
