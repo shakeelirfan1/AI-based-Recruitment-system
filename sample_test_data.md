@@ -2,13 +2,13 @@
 
 ## Candidate
 
-Name: John Doe
+Name: Shakeel Irfan S
 
-Email: john.doe@email.com
+Email:shakeelirfan2005@gmail.com
 
-Phone: +91 9876543210
+Phone: +91 9677717560
 
-Experience: 3 Years
+Experience:less than 1 year
 
 Skills:
 - Python
@@ -18,7 +18,7 @@ Skills:
 - Flask
 
 Education:
-B.Tech Computer Science
+B.E
 
 Job Role:
 AI Engineer
