@@ -1,0 +1,24 @@
+AI Engineer Intern
+
+Skills Required:
+- Python
+- SQL
+- Machine Learning
+- Deep Learning
+- NLP
+- Streamlit
+- FastAPI
+- Git
+- REST API
+- LLMs
+- Prompt Engineering
+- Pandas
+- NumPy
+
+Responsibilities:
+- Build AI applications
+- Develop ML models
+- Work with APIs
+- Deploy AI systems
+- Build dashboards
+- Write clean Python code

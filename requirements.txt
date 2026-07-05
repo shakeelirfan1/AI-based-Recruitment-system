@@ -1,0 +1,14 @@
+streamlit
+python-dotenv
+google-generativeai
+groq
+PyMuPDF
+python-docx
+pyairtable
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+pandas
+reportlab
+requests
