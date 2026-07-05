@@ -334,7 +334,113 @@ streamlit run app.py
 ```
 
 ---
+# ⚙️ Setup Instructions
 
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/shakeelirfan1/AI-Recruitment-System.git
+cd AI-Recruitment-System
+```
+
+---
+
+## 2. Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+GROQ_API_KEY=YOUR_GROQ_API_KEY
+
+AIRTABLE_TOKEN=YOUR_AIRTABLE_TOKEN
+AIRTABLE_BASE_ID=YOUR_AIRTABLE_BASE_ID
+AIRTABLE_TABLE_NAME=Candidates
+
+EMAIL_ADDRESS=YOUR_GMAIL_ADDRESS
+EMAIL_APP_PASSWORD=YOUR_GMAIL_APP_PASSWORD
+```
+
+---
+
+## 5. Configure Google APIs (Optional)
+
+To enable Gmail Resume Import and Google Calendar Interview Scheduling:
+
+- Enable Gmail API
+- Enable Google Calendar API
+- Create OAuth Credentials
+- Download `credentials.json`
+- Place `credentials.json` in the project root
+- Authenticate once to generate `token.json`
+
+> **Note:** OAuth credentials are intentionally excluded from this repository for security reasons.
+
+---
+
+## 6. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will be available at:
+
+```
+http://localhost:8501
+```
+
+---
+
+# 🌐 Streamlit Deployment
+
+The application can also be deployed on Streamlit Cloud.
+
+### Supported Features
+
+- Resume Upload
+- AI Resume Parsing
+- Job Description Matching
+- Candidate Scoring
+- Airtable Integration
+- Recruiter Dashboard
+- Recruiter Review
+- PDF Report Generation
+
+### Local-Only Features
+
+The following features require Google OAuth authentication and are demonstrated in the local environment:
+
+- Gmail Resume Import
+- Google Calendar Interview Scheduling
+
+These features require user-specific OAuth credentials and are therefore not enabled in the public deployment.
+---
 # 🔐 Environment Variables
 
 Create a `.env` file with the following variables:
@@ -423,7 +529,134 @@ The project uses **Airtable** to store:
 
 ![Email Notification](screenshots/mail.png)
 
+# ⚙️ Setup Instructions
 
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/shakeelirfan1/AI-Recruitment-System.git
+cd AI-Recruitment-System
+```
+
+---
+
+## 2. Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+GROQ_API_KEY=YOUR_GROQ_API_KEY
+
+AIRTABLE_TOKEN=YOUR_AIRTABLE_TOKEN
+AIRTABLE_BASE_ID=YOUR_AIRTABLE_BASE_ID
+AIRTABLE_TABLE_NAME=Candidates
+
+EMAIL_ADDRESS=YOUR_GMAIL_ADDRESS
+EMAIL_APP_PASSWORD=YOUR_GMAIL_APP_PASSWORD
+```
+
+---
+
+## 5. Configure Google APIs (Optional)
+
+To enable Gmail Resume Import and Google Calendar Interview Scheduling:
+
+- Enable Gmail API
+- Enable Google Calendar API
+- Create OAuth Credentials
+- Download `credentials.json`
+- Place `credentials.json` in the project root
+- Authenticate once to generate `token.json`
+
+> **Note:** OAuth credentials are intentionally excluded from this repository for security reasons.
+
+---
+
+## 6. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will be available at:
+
+```
+http://localhost:8501
+```
+
+---
+
+# 🌐 Streamlit Deployment
+
+The application can also be deployed on Streamlit Cloud.
+
+### Supported Features
+
+- Resume Upload
+- AI Resume Parsing
+- Job Description Matching
+- Candidate Scoring
+- Airtable Integration
+- Recruiter Dashboard
+- Recruiter Review
+- PDF Report Generation
+
+### Local-Only Features
+
+The following features require Google OAuth authentication and are demonstrated in the local environment:
+
+- Gmail Resume Import
+- Google Calendar Interview Scheduling
+
+These features require user-specific OAuth credentials and are therefore not enabled in the public deployment.
+---
+# 🌐 Live Demo
+
+**Streamlit App:**
+
+https://ai-recruitment-system-dhjbxswtcshgytsazgmcj6.streamlit.app/
+
+## ⚠️ Known Limitation
+
+The **Resume Upload** workflow is fully functional in the deployed application.
+
+The **Import Resume from Gmail** feature is intended for local execution because it requires Google OAuth authentication (`credentials.json` and `token.json`), which are not included in the public repository for security reasons.
+
+To use the Gmail integration:
+
+1. Create Google OAuth credentials.
+2. Download `credentials.json`.
+3. Configure the required environment variables.
+4. Run the application locally.
+
+This design protects sensitive credentials while keeping the application secure.
+---
 # 📈 Future Enhancements
 
 - Duplicate Candidate Detection
