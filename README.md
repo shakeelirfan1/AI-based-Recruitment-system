@@ -504,9 +504,9 @@ The project uses **Airtable** to store:
 ## 📧 Email Notification
 
 ![Email Notification](screenshots/mail.png)
-```
 
 ---
+
 
 # 🌐 Streamlit Deployment
 
